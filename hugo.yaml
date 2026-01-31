@@ -1,0 +1,86 @@
+baseURL: https://tanmoysarkar.me/
+languageCode: en-us
+title: Tanmoy Sarkar
+theme: PaperMod
+enableRobotsTXT: true
+# enableGitInfo: true
+pagination:
+  pagerSize: 10
+sitemap:
+  changefreq: "weekly"
+  priority: 0.5
+  filename: "sitemap.xml"
+permalinks:
+  posts: "/:year/:month/:slug/"
+assets:
+  favicon: favicon.ico
+  favicon16x16: /assets/favicon-16x16.png
+  favicon32x32: /assets/favicon-32x32.png
+  apple_touch_icon: /assets/apple-touch-icon.png
+params:
+  defaultTheme: dark
+  env: production
+  title: Tanmoy Sarkar
+  description: "Engineer exploring databases, distributed systems, and infrastructure. Occasionally going deeper than needed and experimenting with Arduino and ESP boards." 
+  author: "Tanmoy Sarkar"
+  keywords:
+    - Databases
+    - Distributed Systems
+    - Infrastructure
+    - Self Hosting
+    - Open Source
+    - Arduino
+    - ESP32
+    - Hardware Experiments
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/tanmoysrt"
+    - name: linkedin
+      url: "https://linkedin.com/in/tanmoysrt"
+    - name: x
+      url: "https://x.com/tanmoysrt"
+    - name: email
+      url: "mailto:tanmoy@swiftwave.org"
+
+  homeInfoParams:
+    Title: "Hey, I'm Tanmoy 👋"
+    Content: |
+      I work on databases and infrastructure at [Frappe Cloud](https://frappe.io/cloud), building systems that scale reliably.
+
+      I have created [Swiftwave](https://github.com/swiftwave-org/swiftwave) to simplify self-deployment and reduce costs.
+
+      Outside of work, I enjoy tinkering with Arduino and ESP boards just for fun.
+
+      This blog is my space to document experiments, lessons learned, and ideas worth sharing.
+
+  disableThemeToggle: true
+  ShowShareButtons: false
+  ShowFullTextinRSS: true
+  ShowReadingTime: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  comments: false
+  hideFooter: true
+  hideAuthor: true
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 20
+
+frontmatter:
+  date:
+    - date
+    - publishDate
+  lastmod:
+    - lastmod
+    - :git
