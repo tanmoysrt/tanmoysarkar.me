@@ -1,2 +1,4 @@
 *.lock
 public
+.obsidian
+push.sh
